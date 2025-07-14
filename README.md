@@ -6,8 +6,7 @@
 
 ## 🔧 Sobre mí
 
-Soy técnico en computación con experiencia en soporte técnico, desarrollo web y videojuegos.  
-Me apasiona la programación y la tecnología, y estoy constantemente aprendiendo nuevas herramientas para crear soluciones creativas.
+Profesional en formacion, apasionado por la informática y el desarrollo de software. Busco oportunidades para aplicar y expandir mis conocimientos, siempre dispuesto para aprender nuevas cosas.
 
 ---
 
