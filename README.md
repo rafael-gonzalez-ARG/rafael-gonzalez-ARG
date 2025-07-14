@@ -1,13 +1,14 @@
 # 👋 ¡Hola! Soy **Angel Rafael Gonzalez**
 
-🎓 Técnico en Computación | 💻 Desarrollador Full Stack Jr | 🎮 Apasionado por el desarrollo de videojuegos
+🎓  Técnico en Computación |✍ Estudiante de Ingeniería en Sistemas de la Información - UTN | 💻 Desarrollador Full Stack Jr | 🎮 Apasionado por el desarrollo de videojuegos |
+
 
 ---
 
 ## 🔧 Sobre mí
 
 Soy un profesional en formación, apasionado por la informática y el desarrollo de software.  
-Busco oportunidades para aplicar y ampliar mis conocimientos, siempre abierto a aprender y crecer.
+Busco oportunidades para aplicar y ampliar mis conocimientos, siempre abierto a aprender y crecer. 👨‍💻
 
 ---
 
