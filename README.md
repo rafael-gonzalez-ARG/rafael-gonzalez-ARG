@@ -7,8 +7,8 @@
 
 ## 🔧 Sobre mí
 
-Soy un profesional en formación, apasionado por la informática y el desarrollo de software.  
-Busco oportunidades para aplicar y ampliar mis conocimientos, siempre abierto a aprender y crecer. 👨‍💻
+👨‍💻 Soy un profesional en formación, apasionado por la informática y el desarrollo de software.  
+💪 Busco oportunidades para aplicar y ampliar mis conocimientos, siempre abierto a aprender y crecer. 
 
 ---
 
