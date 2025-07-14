@@ -1,6 +1,6 @@
 # 👋 ¡Hola! Soy **Angel Rafael Gonzalez**
 
-🎓 Técnico en Computación | 💻 Desarrollador Full Stack Jr | 🎮 Apasionado del desarrollo de videojuegos
+🎓 Técnico en Computación | 💻 Desarrollador Full Stack Jr | 🎮 Apasionado por el desarrollo de videojuegos
 
 ---
 
