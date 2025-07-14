@@ -110,6 +110,7 @@
 ## 📫 Contacto
 
 ✉️ **Email:** rafa2005gz@gmail.com  
+
 💼 **LinkedIn:** [linkedin.com/in/angel-rafael-gonzalez-96a39a2ba](https://www.linkedin.com/in/angel-rafael-gonzalez-96a39a2ba)
 
 ---
