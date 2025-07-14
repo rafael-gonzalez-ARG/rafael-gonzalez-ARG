@@ -22,7 +22,7 @@ Busco oportunidades para aplicar y ampliar mis conocimientos, siempre abierto a 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40" />&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="40" height="40" />&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40" />&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/godotengine/godot-icons/master/godot_icon.svg" alt="GDScript" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="GDScript" width="40" height="40" />
 </p>
 
 ### Web  
@@ -53,7 +53,7 @@ Busco oportunidades para aplicar y ampliar mis conocimientos, siempre abierto a 
 
 ### Motores de juego  
 <p align="left">
-  <img src="https://raw.githubusercontent.com/godotengine/godot-icons/master/godot_icon.svg" alt="Godot Engine" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot Engine" width="40" height="40" />
 </p>
 
 
