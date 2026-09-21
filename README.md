@@ -1,7 +1,7 @@
 # 👋 ¡Hola! Soy **Angel Rafael Gonzalez**
 
 🎓 **Estudiante de Ingeniería en Sistemas de la Información (UTN)**  
-⚙️ **SysAdmin & Software de Base** | 🚀 **Orientado a DevOps, Infraestructura y Redes**
+⚙️ **SysAdmin** | 🚀 **Orientado a DevOps, Infraestructura y Redes**
 
 ---
 
@@ -10,8 +10,8 @@
 Especializado en la administración de infraestructura, virtualización, redes y automatización de sistemas. Mi enfoque está centrado en garantizar la alta disponibilidad, observabilidad y seguridad de los entornos IT, combinando la gestión de servidores con el desarrollo de scripts y herramientas internas de automatización.
 
 - 🏢 **Experiencia en:** Administración de Windows Server, Active Directory, Proxmox VE, Grafana y SQL Server.
-- ⚡ **Automatización:** Desarrollo de scripts y herramientas con Python, PowerShell, Batch y APIs de gestión[cite: 1, 2].
-- 🌐 **Redes y Protocolos:** TCP/IP, DNS, DHCP, VPN, SMB, RDP, WRM (Formación CCNA)[cite: 1].
+- ⚡ **Automatización:** Desarrollo de scripts y herramientas con Python, PowerShell, Batch y APIs de gestión.
+- 🌐 **Redes y Protocolos:** TCP/IP, DNS, DHCP, VPN, SMB, RDP, WRM (Formación CCNA).
 - 💡 **Intereses:** Cultura DevOps, CI/CD, Infraestructura como Código (IaC) y Cloud Computing.
 
 ---
@@ -47,15 +47,6 @@ Especializado en la administración de infraestructura, virtualización, redes y
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="40" height="40" />&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="40" height="40" />
 </p>
-
----
-
-## 📜 Formación y Certificaciones
-
-- 🎓 **Ingeniería en Sistemas de la Información** — Universidad Tecnológica Nacional (UTN)
-- 🌐 **CCNA Networking** — Academia Proydesa
-- ☁️ **Introducción a Cloud Infrastructure (AZ-900)** — EducaciónIT
-- 🗃️ **Administrador de Bases de Datos SQL** — EducaciónIT
 
 ---
 
