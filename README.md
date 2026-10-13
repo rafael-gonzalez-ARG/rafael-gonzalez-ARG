@@ -34,8 +34,6 @@ Herramienta que construí para automatizar el alta y el mantenimiento de termina
 
 **Stack:** Python · FastAPI · React + Vite · GitHub Actions · APIs de TeamViewer y GitHub
 
-📄 [Ver la ficha completa](proyectos/cat-teamviewer-sync/README.md) · [Guía rápida (PDF)](proyectos/cat-teamviewer-sync/CAT-guia-rapida.pdf) · [Guía técnica y de usuario (PDF)](proyectos/cat-teamviewer-sync/CAT-guia-tecnica-y-usuario.pdf)
-
 ---
 
 ## 🚀 Tecnologías y herramientas
