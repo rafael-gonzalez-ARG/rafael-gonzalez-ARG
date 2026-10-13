@@ -18,21 +18,30 @@ Especializado en la administración de infraestructura, virtualización, redes y
 
 ## 🛠️ Proyecto destacado
 
-### CAT · TeamViewer Sync
+### SEP Update · Distribución de firmas Symantec
 
-Herramienta que construí para automatizar el alta y el mantenimiento de terminales en **TeamViewer** a partir de los correos de texto plano que llegan con los cambios.
+Herramienta que construí para descargar las definiciones de **Symantec Endpoint Protection** y distribuirlas a los servidores SEPM de varias sedes por **WinRM HTTPS**, sin intervención manual.
 
-- 🎯 **Problema:** aplicar a mano esas listas era lento y propenso a errores (grupos mal escritos, números duplicados, equipos reemplazados).
-- ✅ **Solución:** la persona pega el correo, revisa una tabla (lo inválido se marca en **rojo**) y un **motor de reglas** aplica los cambios en TeamViewer. Si algo es riesgoso, **no lo toca** y pide revisión manual.
-- 🔒 **Seguro por diseño:** falla cerrado, modo simulación (`--dry-run`), contraseña obligatoria para exponerlo en red y cola revalidada como no confiable.
-- 🧪 **Calidad:** 100 pruebas automatizadas, CI y auditorías de seguridad sin hallazgos.
+- 🎯 **Problema:** actualizar cada sede a mano era lento, y cuando una fallaba nadie se enteraba: la sede quedaba con firmas viejas.
+- ✅ **Solución:** un script detecta la última versión, la descarga una sola vez y la entrega a cada sede. Lleva el estado **por archivo y por servidor**: si una sede falla, la próxima corrida reintenta solo esa.
+- 🔒 **Seguro por diseño:** validación TLS completa (sin `-SkipCACheck`), **SHA256 verificado en destino** antes de activar cada archivo, y huella de certificado confirmada antes de confiar en una sede.
+- 🧪 **Calidad:** 21 pruebas automatizadas que simulan una sede real, códigos de salida por tipo de fallo y logs JSON para Grafana/Loki.
+
+**Cómo se comporta cuando una sede falla.** En la primera corrida, dos sedes reciben el archivo y la tercera no responde: el script lo registra, termina con error y deja esa sede pendiente.
 
 <p align="center">
-  <img src="proyectos/cat-teamviewer-sync/img/02-correo-cargado.png" alt="CAT: correo interpretado en la tabla" width="49%" />
-  <img src="proyectos/cat-teamviewer-sync/img/03-error-filas-rojas.png" alt="CAT: filas con error marcadas en rojo" width="49%" />
+  <img src="proyectos/sep-update/img/01-sede-caida.png" alt="SEP Update: una sede sin conexión queda pendiente" />
 </p>
 
-**Stack:** Python · FastAPI · React + Vite · GitHub Actions · APIs de TeamViewer y GitHub
+En la corrida siguiente no vuelve a descargar ni a copiar a las sedes que ya están al día: entrega solo a la pendiente y recién entonces da el archivo por distribuido.
+
+<p align="center">
+  <img src="proyectos/sep-update/img/02-reintento.png" alt="SEP Update: reintento automático solo de la sede pendiente" />
+</p>
+
+<sub>Capturas de la consola ejecutando el script contra tres sedes simuladas (entorno de pruebas, sin datos de producción).</sub>
+
+**Stack:** PowerShell 5.1 · WinRM HTTPS · Pester · Grafana Alloy · Loki
 
 ---
 
