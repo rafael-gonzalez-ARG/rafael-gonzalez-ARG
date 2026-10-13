@@ -16,6 +16,28 @@ Especializado en la administración de infraestructura, virtualización, redes y
 
 ---
 
+## 🛠️ Proyecto destacado
+
+### CAT · TeamViewer Sync
+
+Herramienta que construí para automatizar el alta y el mantenimiento de terminales en **TeamViewer** a partir de los correos de texto plano que llegan con los cambios.
+
+- 🎯 **Problema:** aplicar a mano esas listas era lento y propenso a errores (grupos mal escritos, números duplicados, equipos reemplazados).
+- ✅ **Solución:** la persona pega el correo, revisa una tabla (lo inválido se marca en **rojo**) y un **motor de reglas** aplica los cambios en TeamViewer. Si algo es riesgoso, **no lo toca** y pide revisión manual.
+- 🔒 **Seguro por diseño:** falla cerrado, modo simulación (`--dry-run`), contraseña obligatoria para exponerlo en red y cola revalidada como no confiable.
+- 🧪 **Calidad:** 100 pruebas automatizadas, CI y auditorías de seguridad sin hallazgos.
+
+<p align="center">
+  <img src="proyectos/cat-teamviewer-sync/img/02-correo-cargado.png" alt="CAT: correo interpretado en la tabla" width="49%" />
+  <img src="proyectos/cat-teamviewer-sync/img/03-error-filas-rojas.png" alt="CAT: filas con error marcadas en rojo" width="49%" />
+</p>
+
+**Stack:** Python · FastAPI · React + Vite · GitHub Actions · APIs de TeamViewer y GitHub
+
+📄 [Ver la ficha completa](proyectos/cat-teamviewer-sync/README.md) · [Guía rápida (PDF)](proyectos/cat-teamviewer-sync/CAT-guia-rapida.pdf) · [Guía técnica y de usuario (PDF)](proyectos/cat-teamviewer-sync/CAT-guia-tecnica-y-usuario.pdf)
+
+---
+
 ## 🚀 Tecnologías y herramientas
 
 ### 🖥️ Sistemas, Virtualización y Servidores
