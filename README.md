@@ -57,7 +57,7 @@ En la transferencia siguiente no vuelve a descargar ni a copiar a las sedes que 
 
 <sub>Capturas de la consola ejecutando el script contra servidores simulados.</sub>
 
-**Monitoreo en Grafana.** Cada ejecución deja logs JSON que Grafana Alloy envía a Loki; un dashboard muestra en vivo las transferencias exitosas, la disponibilidad de los servidores, los errores y el historial de entregas por sede.
+**Monitoreo en Grafana.** Cada ejecución deja logs JSON que Grafana Alloy envía a Loki. Diseñé un dashboard que muestra el resumen del período, la firma vigente de cada categoría, el estado de cada sede, **el detalle de cada error** (qué falló, en qué sede y con qué mensaje), el rendimiento por sede y el registro de ejecución filtrable por nivel.
 
 <p align="center">
   <img src="proyectos/sep-update/img/03-grafana.png" alt="SEP Update: dashboard de Grafana" />
