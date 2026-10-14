@@ -11,7 +11,7 @@ Especializado en la administración de infraestructura, virtualización, redes y
 
 - 🏢 **Experiencia en:** Administración de Windows Server, Active Directory, Proxmox VE, Grafana y SQL Server.
 - ⚡ **Automatización:** Desarrollo de scripts y herramientas con Python, PowerShell, Batch y APIs de gestión.
-- 🌐 **Redes y Protocolos:** TCP/IP, DNS, DHCP, VPN, SMB, RDP, WRM (Formación CCNA).
+- 🌐 **Redes y Protocolos:** TCP/IP, DNS, DHCP, VPN, SMB, RDP, WRM.
 - 💡 **Intereses:** Cultura DevOps, CI/CD, Infraestructura como Código (IaC) y Cloud Computing.
 
 ---
