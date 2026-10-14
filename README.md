@@ -22,10 +22,10 @@ Especializado en la administración de infraestructura, virtualización, redes y
 
 Herramienta que construí para descargar las definiciones de **Symantec Endpoint Protection** y distribuirlas a los servidores SEPM de varias sedes por **WinRM HTTPS**, sin intervención manual.
 
-- 🎯 **Problema:** actualizar cada sede a mano era lento, y cuando una fallaba nadie se enteraba: la sede quedaba con firmas viejas.
+- 🎯 **Problema:** actualizar cada sede a mano era lento y perdiamos mucho tiempo.
 - ✅ **Solución:** un script detecta la última versión, la descarga una sola vez y la entrega a cada sede. Lleva el estado **por archivo y por servidor**: si una sede falla, la próxima corrida reintenta solo esa.
-- 🔒 **Seguro por diseño:** validación TLS completa (sin `-SkipCACheck`), **SHA256 verificado en destino** antes de activar cada archivo, y huella de certificado confirmada antes de confiar en una sede.
-- 🧪 **Calidad:** 21 pruebas automatizadas que simulan una sede real, códigos de salida por tipo de fallo y logs JSON para Grafana/Loki.
+- 🔒 **Seguro por diseño:** validación TLS completa, **SHA256 verificado en destino** antes de activar cada archivo, y huella de certificado confirmada antes de confiar en una sede.
+- 🧪 **Calidad:** 21 pruebas automatizadas que simulan una sede real, códigos de salida por tipo de fallo y logs JSON para Grafana.
 
 **Cómo se comporta cuando una sede falla.** En la primera corrida, dos sedes reciben el archivo y la tercera no responde: el script lo registra, termina con error y deja esa sede pendiente.
 
