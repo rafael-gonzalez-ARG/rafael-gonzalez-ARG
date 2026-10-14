@@ -39,7 +39,7 @@ En la corrida siguiente no vuelve a descargar ni a copiar a las sedes que ya est
   <img src="proyectos/sep-update/img/02-reintento.png" alt="SEP Update: reintento automático solo de la sede pendiente" />
 </p>
 
-<sub>Capturas de la consola ejecutando el script contra tres sedes simuladas (entorno de pruebas, sin datos de producción).</sub>
+<sub>Capturas de la consola ejecutando el script contra servidores simulados.</sub>
 
 **Stack:** PowerShell 5.1 · WinRM HTTPS · Pester · Grafana Alloy · Loki
 
