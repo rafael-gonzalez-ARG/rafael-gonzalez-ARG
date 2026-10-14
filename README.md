@@ -61,18 +61,18 @@ En la transferencia siguiente no vuelve a descargar ni a copiar a las sedes que 
 
 ### ConfigTerminal · Provisioning y bloqueo de terminales Windows
 
-Herramienta que construí para dejar una terminal Windows 11 lista y "blindada" en una sola pasada: captura la configuración de un equipo modelo y la clona en cada terminal nueva, sin intervención manual.
+Herramienta que construí para dejar una terminal tipo casino web puesta en marcha: captura la configuración de un equipo modelo y la clona en cada terminal nueva.
 
 - 🎯 **Problema:** preparar cada terminal a mano (aspecto, directivas, energía, privacidad, drivers, nombre, inicio automático) eran decenas de pasos repetidos y fáciles de olvidar.
 - ✅ **Solución:** un script captura el equipo modelo (registro, directivas de grupo, firewall, energía, servicios, barra de tareas) y lo aplica a la terminal nueva; lo que Windows ya no expone por registro lo resuelve manejando la app de Configuración por **automatización de interfaz (UI Automation)**.
-- 🔒 **Seguro por diseño:** backup del estado previo antes de tocar nada, sin claves en texto plano (inicio de sesión automático vía secreto LSA cifrado), tolerante a fallos (si una clave está protegida, sigue y lo informa) y con chequeo de precondiciones antes de aplicar.
-- 🧪 **Calidad:** importación de registro valor por valor, resumen final tipo checklist que **verifica el estado real** del equipo, y un registro por terminal. Probado en +10 terminales reales.
+- 🔒 **Seguro por diseño:** backup del estado previo, inicio de sesión automático vía LSA cifrado, tolerante a fallos (si una clave está protegida, sigue y lo informa) y con chequeo de precondiciones antes de aplicar.
+- 🧪 **Calidad:** importación de registro valor por valor, resumen final tipo checklist que **verifica el estado real** del equipo, y un registro por terminal.
 
 <p align="center">
   <img src="proyectos/config-terminal/img/01-resumen.png" alt="ConfigTerminal: resumen final con el equipo configurado" width="745" />
 </p>
 
-El resumen no confía en lo que el script "creyó" hacer: al terminar **verifica el estado real** del equipo. Lo que quedó pendiente lo marca en amarillo —acá la impresora todavía no está instalada— en vez de darlo por hecho.
+Al terminar **verifica el estado real** del equipo. Lo que quedó pendiente lo marca en amarillo —acá la impresora todavía no está instalada— en vez de darlo por hecho.
 
 <p align="center">
   <img src="proyectos/config-terminal/img/02-revisar.png" alt="ConfigTerminal: el resumen marca en amarillo lo que falta revisar" width="745" />
