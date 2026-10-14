@@ -57,6 +57,14 @@ En la transferencia siguiente no vuelve a descargar ni a copiar a las sedes que 
 
 <sub>Capturas de la consola ejecutando el script contra servidores simulados.</sub>
 
+**Monitoreo en Grafana.** Cada ejecución deja logs JSON que Grafana Alloy envía a Loki; un dashboard muestra en vivo las transferencias exitosas, la disponibilidad de los servidores, los errores y el historial de entregas por sede.
+
+<p align="center">
+  <img src="proyectos/sep-update/img/03-grafana.png" alt="SEP Update: dashboard de Grafana" />
+</p>
+
+<sub>Dashboard real; las IPs y los nombres de las sedes fueron reemplazados.</sub>
+
 **Stack:** PowerShell 5.1 · WinRM HTTPS · Pester · Grafana Alloy · Loki
 
 ### ConfigTerminal · Provisioning y bloqueo de terminales Windows
