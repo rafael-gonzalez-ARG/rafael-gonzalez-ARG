@@ -108,9 +108,9 @@ Implementé copias de seguridad de **imagen completa** de los puestos de trabajo
   <img src="proyectos/backups-baremetal/img/04-logs.png" alt="UrBackup: registro de copias por equipo" width="49%" />
 </p>
 
-<sub>Capturas del panel real; los nombres de equipos, la IP y el nombre del servidor fueron reemplazados.</sub>
+<sub>Capturas del panel; los nombres de equipos, la IP y el nombre del servidor fueron reemplazados.</sub>
 
-**Stack:** UrBackup · Windows · NAS (SMB) · PowerShell · Batch
+**Stack:** UrBackup · Windows Server · NAS (SMB) · PowerShell · Batch
 
 ---
 
