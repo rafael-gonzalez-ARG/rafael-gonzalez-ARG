@@ -24,7 +24,7 @@ Herramienta que construí para automatizar el alta y el mantenimiento de termina
 
 - 🎯 **Problema:** aplicar a mano esas listas era lento y propenso a errores (grupos mal escritos, números duplicados, equipos reemplazados).
 - ✅ **Solución:** la persona pega el correo, revisa una tabla (lo inválido se marca en **rojo**) y un **motor de reglas** aplica los cambios en TeamViewer. Si algo es riesgoso, **no lo toca** y pide revisión manual.
-- 🔒 **Seguro por diseño:** falla cerrado, modo simulación (`--dry-run`), contraseña obligatoria para exponerlo en red y cola revalidada como no confiable.
+- 🔒 **Seguro por diseño:** falla cerrado, modo simulación, contraseña obligatoria para exponerlo en red y cola revalidada como no confiable.
 - 🧪 **Calidad:** 100 pruebas automatizadas, CI y auditorías de seguridad sin hallazgos.
 
 <p align="center">
@@ -39,17 +39,17 @@ Herramienta que construí para automatizar el alta y el mantenimiento de termina
 Herramienta que construí para descargar las definiciones de **Symantec Endpoint Protection** y distribuirlas a los servidores SEPM de varias sedes por **WinRM HTTPS**, sin intervención manual.
 
 - 🎯 **Problema:** actualizar cada sede a mano era lento y perdiamos mucho tiempo.
-- ✅ **Solución:** un script detecta la última versión, la descarga una sola vez y la entrega a cada sede. Lleva el estado **por archivo y por servidor**: si una sede falla, la próxima corrida reintenta solo esa.
+- ✅ **Solución:** un script detecta la última versión, la descarga una sola vez y la entrega a cada sede. Lleva el estado **por archivo y por servidor**: si una sede falla, la próxima vuelta reintenta solo esa.
 - 🔒 **Seguro por diseño:** validación TLS completa, **SHA256 verificado en destino** antes de activar cada archivo, y huella de certificado confirmada antes de confiar en una sede.
 - 🧪 **Calidad:** 21 pruebas automatizadas que simulan una sede real, códigos de salida por tipo de fallo y logs JSON para Grafana.
 
-**Cómo se comporta cuando una sede falla.** En la primera corrida, dos sedes reciben el archivo y la tercera no responde: el script lo registra, termina con error y deja esa sede pendiente.
+**Cómo se comporta cuando una sede falla.** En la primera vuelta, dos sedes reciben el archivo y la tercera no responde: el script lo registra, termina con error y deja esa sede pendiente.
 
 <p align="center">
   <img src="proyectos/sep-update/img/01-sede-caida.png" alt="SEP Update: una sede sin conexión queda pendiente" />
 </p>
 
-En la corrida siguiente no vuelve a descargar ni a copiar a las sedes que ya están al día: entrega solo a la pendiente y recién entonces da el archivo por distribuido.
+En la transferencia siguiente no vuelve a descargar ni a copiar a las sedes que ya están al día: entrega solo a la pendiente y recién entonces da el archivo por distribuido.
 
 <p align="center">
   <img src="proyectos/sep-update/img/02-reintento.png" alt="SEP Update: reintento automático solo de la sede pendiente" />
