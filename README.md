@@ -82,6 +82,28 @@ Al terminar **verifica el estado real** del equipo. Lo que quedó pendiente lo m
 
 **Stack:** PowerShell 5.1 · UI Automation (.NET) · Registro y Directivas de Windows · robocopy
 
+### Backups bare metal · UrBackup
+
+Implementé copias de seguridad de **imagen completa** de los puestos de trabajo de la empresa con **UrBackup**, para poder restaurar un equipo entero —sistema, programas, configuración y datos— después de una falla de disco o un ransomware.
+
+- 🎯 **Problema:** cuando un puesto fallaba había que reinstalar y configurar todo desde cero, y lo que no estaba guardado en un servidor se perdía.
+- ✅ **Solución:** un servidor UrBackup respalda todos los equipos que lo necesitan y guarda las imágenes en un NAS: **incremental cada 5 días y completa cada 30**, con retención automática y *change block tracking* para que las incrementales solo copien lo que cambió.
+- 🔁 **Restauración probada:** recuperación completa de un equipo arrancando desde la ISO de rescate de UrBackup (*bare metal restore*).
+- 🧹 **Automatización:** script propio (Batch + PowerShell) que, al dar de baja un usuario, comprueba que no haya copias en curso y libera su espacio en el momento, sin esperar las 24 horas de la limpieza automática.
+
+<p align="center">
+  <img src="proyectos/backups-baremetal/img/01-ajustes-servidor.png" alt="UrBackup: configuración del servidor" width="49%" />
+  <img src="proyectos/backups-baremetal/img/02-politica-imagenes.png" alt="UrBackup: política de copias imagen" width="49%" />
+</p>
+<p align="center">
+  <img src="proyectos/backups-baremetal/img/03-ultimas-actividades.png" alt="UrBackup: últimas actividades" width="49%" />
+  <img src="proyectos/backups-baremetal/img/04-logs.png" alt="UrBackup: registro de copias por equipo" width="49%" />
+</p>
+
+<sub>Capturas del panel real; los nombres de equipos, la IP y el nombre del servidor fueron reemplazados.</sub>
+
+**Stack:** UrBackup · Windows · NAS (SMB) · PowerShell · Batch
+
 ---
 
 ## 🚀 Tecnologías y herramientas
