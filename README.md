@@ -28,8 +28,8 @@ Herramienta que construí para automatizar el alta y el mantenimiento de termina
 - 🧪 **Calidad:** 100 pruebas automatizadas, CI y auditorías de seguridad sin hallazgos.
 
 <p align="center">
-  <img src="proyectos/cat-teamviewer-sync/img/02-correo-cargado.png" alt="CAT: correo interpretado en la tabla" width="49%" />
-  <img src="proyectos/cat-teamviewer-sync/img/03-error-filas-rojas.png" alt="CAT: filas con error marcadas en rojo" width="49%" />
+  <img src="proyectos/cat-teamviewer-sync/img/02-correo-cargado.png" alt="CAT: correo interpretado en la tabla" width="80%" />
+  <img src="proyectos/cat-teamviewer-sync/img/03-error-filas-rojas.png" alt="CAT: filas con error marcadas en rojo" width="80%" />
 </p>
 
 **Stack:** Python · FastAPI · React + Vite · GitHub Actions · APIs de TeamViewer y GitHub
