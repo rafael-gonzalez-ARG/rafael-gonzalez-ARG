@@ -90,14 +90,14 @@ Al terminar **verifica el estado real** del equipo. Lo que quedó pendiente lo m
 
 **Stack:** PowerShell 5.1 · UI Automation (.NET) · Registro y Directivas de Windows · robocopy
 
-### Backups bare metal · UrBackup
+### Backups Automatizados Bare-Metal 
 
-Implementé copias de seguridad de **imagen completa** de los puestos de trabajo de la empresa con **UrBackup**, para poder restaurar un equipo entero —sistema, programas, configuración y datos— después de una falla de disco o un ransomware.
+Implementé copias de seguridad de **imagen completa** de los puestos de trabajo de la empresa con **UrBackup**, para poder restaurar un equipo entero —sistema, programas, configuración y datos— después de una falla de hardware o un ransomware.
 
-- 🎯 **Problema:** cuando un puesto fallaba había que reinstalar y configurar todo desde cero, y lo que no estaba guardado en un servidor se perdía.
+- 🎯 **Problema:** Se realizaban backups manualmente, puesto por puesto todos los meses y estos ocupaban muchísimo espacio en el NAS, así que eran simplemente 5 usuarios , con esta implementacion, se le realiza backup a todos los puestos de trabajo que requieran dicho respaldo, ya que se lograron comprimir el tamaño de las imagenes.
 - ✅ **Solución:** un servidor UrBackup respalda todos los equipos que lo necesitan y guarda las imágenes en un NAS: **incremental cada 5 días y completa cada 30**, con retención automática y *change block tracking* para que las incrementales solo copien lo que cambió.
-- 🔁 **Restauración probada:** recuperación completa de un equipo arrancando desde la ISO de rescate de UrBackup (*bare metal restore*).
-- 🧹 **Automatización:** script propio (Batch + PowerShell) que, al dar de baja un usuario, comprueba que no haya copias en curso y libera su espacio en el momento, sin esperar las 24 horas de la limpieza automática.
+- 🔁 **Restauración completamente funcional:** recuperación completa de un equipo arrancando desde la ISO de rescate de UrBackup (*bare metal restore*).
+- 🧹 **Automatización:** script (Batch + PowerShell) que, al dar de baja un usuario, comprueba que no haya copias en curso y libera su espacio en el momento, sin esperar las 24 horas de la limpieza automática.
 
 <p align="center">
   <img src="proyectos/backups-baremetal/img/01-ajustes-servidor.png" alt="UrBackup: configuración del servidor" width="49%" />
