@@ -28,8 +28,8 @@ Herramienta que construí para automatizar el alta y el mantenimiento de termina
 - 🧪 **Calidad:** 100 pruebas automatizadas, CI y auditorías de seguridad sin hallazgos.
 
 <p align="center">
-  <img src="proyectos/cat-teamviewer-sync/img/02-correo-cargado.png" alt="CAT: correo interpretado en la tabla" width="80%" />
-  <img src="proyectos/cat-teamviewer-sync/img/03-error-filas-rojas.png" alt="CAT: filas con error marcadas en rojo" width="80%" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/cat-teamviewer-sync/img/02-correo-cargado.png" alt="CAT: correo interpretado en la tabla" width="80%" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/cat-teamviewer-sync/img/03-error-filas-rojas.png" alt="CAT: filas con error marcadas en rojo" width="80%" />
 </p>
 
 **Stack:** Python · FastAPI · React + Vite · GitHub Actions · APIs de TeamViewer y GitHub
@@ -46,13 +46,13 @@ Herramienta que construí para descargar las definiciones de **Symantec Endpoint
 **Cómo se comporta cuando una sede falla.** En la primera vuelta, dos sedes reciben el archivo y la tercera no responde: el script lo registra, termina con error y deja esa sede pendiente.
 
 <p align="center">
-  <img src="proyectos/sep-update/img/01-sede-caida.png" alt="SEP Update: una sede sin conexión queda pendiente" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/sep-update/img/01-sede-caida.png" alt="SEP Update: una sede sin conexión queda pendiente" />
 </p>
 
 En la transferencia siguiente no vuelve a descargar ni a copiar a las sedes que ya están al día: entrega solo a la pendiente y recién entonces da el archivo por distribuido.
 
 <p align="center">
-  <img src="proyectos/sep-update/img/02-reintento.png" alt="SEP Update: reintento automático solo de la sede pendiente" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/sep-update/img/02-reintento.png" alt="SEP Update: reintento automático solo de la sede pendiente" />
 </p>
 
 <sub>Capturas de la consola ejecutando el script contra servidores simulados.</sub>
@@ -60,7 +60,7 @@ En la transferencia siguiente no vuelve a descargar ni a copiar a las sedes que 
 **Monitoreo en Grafana.** Cada ejecución deja logs JSON que Grafana Alloy envía a Loki. Diseñé un dashboard que muestra el resumen del período, la firma vigente de cada categoría, el estado de cada sede, **el detalle de cada error** (qué falló, en qué sede y con qué mensaje), el rendimiento por sede y el registro de ejecución filtrable por nivel.
 
 <p align="center">
-  <img src="proyectos/sep-update/img/03-grafana.png" alt="SEP Update: dashboard de Grafana" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/sep-update/img/03-grafana.png" alt="SEP Update: dashboard de Grafana" />
 </p>
 
 <sub>Dashboard real; las IPs y los nombres de las sedes fueron reemplazados.</sub>
@@ -77,13 +77,13 @@ Herramienta que construí para dejar una terminal tipo casino web puesta en marc
 - 🧪 **Calidad:** importación de registro valor por valor, resumen final tipo checklist que **verifica el estado real** del equipo, y un registro por terminal.
 
 <p align="center">
-  <img src="proyectos/config-terminal/img/01-resumen.png" alt="ConfigTerminal: resumen final con el equipo configurado" width="745" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/config-terminal/img/01-resumen.png" alt="ConfigTerminal: resumen final con el equipo configurado" width="745" />
 </p>
 
 Al terminar **verifica el estado real** del equipo. Lo que quedó pendiente lo marca en amarillo —acá la impresora todavía no está instalada— en vez de darlo por hecho.
 
 <p align="center">
-  <img src="proyectos/config-terminal/img/02-revisar.png" alt="ConfigTerminal: el resumen marca en amarillo lo que falta revisar" width="745" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/config-terminal/img/02-revisar.png" alt="ConfigTerminal: el resumen marca en amarillo lo que falta revisar" width="745" />
 </p>
 
 <sub>Capturas de la consola ejecutando el script (datos de ejemplo).</sub>
@@ -100,12 +100,12 @@ Implementé copias de seguridad de **imagen completa** de los puestos de trabajo
 - 🧹 **Automatización:** script (Batch + PowerShell) que, al dar de baja un usuario, comprueba que no haya copias en curso y libera su espacio en el momento, sin esperar las 24 horas de la limpieza automática.
 
 <p align="center">
-  <img src="proyectos/backups-baremetal/img/01-ajustes-servidor.png" alt="UrBackup: configuración del servidor" width="49%" />
-  <img src="proyectos/backups-baremetal/img/02-politica-imagenes.png" alt="UrBackup: política de copias imagen" width="49%" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/backups-baremetal/img/01-ajustes-servidor.png" alt="UrBackup: configuración del servidor" width="49%" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/backups-baremetal/img/02-politica-imagenes.png" alt="UrBackup: política de copias imagen" width="49%" />
 </p>
 <p align="center">
-  <img src="proyectos/backups-baremetal/img/03-ultimas-actividades.png" alt="UrBackup: últimas actividades" width="49%" />
-  <img src="proyectos/backups-baremetal/img/04-logs.png" alt="UrBackup: registro de copias por equipo" width="49%" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/backups-baremetal/img/03-ultimas-actividades.png" alt="UrBackup: últimas actividades" width="49%" />
+  <img src="https://raw.githubusercontent.com/rafael-gonzalez-ARG/rafael-gonzalez-ARG/assets/proyectos/backups-baremetal/img/04-logs.png" alt="UrBackup: registro de copias por equipo" width="49%" />
 </p>
 
 <sub>Capturas del panel; los nombres de equipos, la IP y el nombre del servidor fueron reemplazados.</sub>
