@@ -1,7 +1,7 @@
 # 👋 ¡Hola! Soy **Angel Rafael Gonzalez**
 
 🎓 **Estudiante de Ingeniería en Sistemas de la Información (UTN)**  
-⚙️ **SysAdmin** | 🚀 **Orientado a DevOps, Infraestructura y Redes**
+⚙️ **SysAdmin/**💻**IT Support** | 🚀 **Orientado a DevOps, Infraestructura y Redes**
 
 ---
 
